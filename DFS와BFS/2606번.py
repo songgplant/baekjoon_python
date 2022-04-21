@@ -1,3 +1,6 @@
+# 바이러스
+# https://www.acmicpc.net/problem/2606
+
 # 컴퓨터 수
 N = int(input())
 graph = [[0 for _ in range(N+1)] for _ in range(N+1)]
