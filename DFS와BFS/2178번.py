@@ -21,13 +21,13 @@ def bfs(x, y) :
             nx = x + dx[i]
             ny = y + dy[i]
 
-        if nx<0 or ny<0 or nx>=N or ny>=M :
-            continue
-        if graph[nx][ny] == 0 :
-            continue
-        if graph[nx][ny] == 1 : # 미로 길 이라면
-            graph[nx][ny] = graph[x][y]+1
-            queue.append((nx, ny))
+            if nx<0 or ny<0 or nx>=N or ny>=M :
+                continue
+            if graph[nx][ny] == 0 :
+                continue
+            if graph[nx][ny] == 1 : # 미로 길 이라면
+                graph[nx][ny] = graph[x][y]+1
+                queue.append((nx, ny))
 
     return graph[N-1][M-1] # 인덱스는 하나 작은 숫자
 
