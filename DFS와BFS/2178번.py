@@ -32,4 +32,3 @@ def bfs(x, y) :
     return graph[N-1][M-1] # 인덱스는 하나 작은 숫자
 
 print(bfs(0,0))
-
